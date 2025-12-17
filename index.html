@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Avatar Generator</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="/img.jpg"/>
+</head>
+
+<body>
+<section>
+ <h1>GET YOUR AVATAR</h1>
+
+ <div class="centerDiv">
+
+  <div class="details">
+   <label>ENTER YOUR NAME</label><br>
+   <input type="text" id="nameid" placeholder="type here">
+  </div>
+
+  <div class="details">
+    <label>Avatar Style</label><br>
+    <select id="stylePicker">
+      <option value="bottts">Bottts</option>
+      <option value="identicon">Identicon</option>
+      <option value="pixel-art">Pixel Art</option>
+      <option value="lorelei">Cute</option>
+    </select>
+  </div>
+
+  <div class="details">
+    <label>Background Color</label><br>
+    <input type="color" id="bgColorPicker" />
+  </div>
+
+  <div class="details">
+    <label>Avatar Size</label><br>
+    <select id="sizePicker">
+      <option value="150">150px</option>
+      <option value="200" selected>200px</option>
+      <option value="250">250px</option>
+    </select>
+  </div>
+
+  <div class="imgdiv">
+    <img src="img.jpg" id="avatar" width="200" height="200" class="avatar">
+  </div>
+
+  <button id="generateBtn">GENERATE</button>
+  <button id="randomBtn">RANDOM</button>
+  <button id="downloadBtn">DOWNLOAD</button>
+
+ </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
